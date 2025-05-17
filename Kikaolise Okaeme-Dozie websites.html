@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KixxieGroomFairy</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('c:\Users\ISMS\Downloads\download.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: lightpink;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid tomato; 
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: underline;
+            color: tomato;
+        }
+        nav ul li a:hover {
+            color: deeppink;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: tomato;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: lightpink;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            background-color: mistyrose;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            max-width: 600px;
+            margin: auto;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form select {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid tomato;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: deeppink;
+        }
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        gallery{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            max-width:  calc(33%- 10px);
+            height: auto;
+            border-radius:  8px;
+            @media (max-width: 768px) {
+                .gallery img {
+                    max-width: calc(50% -10px);
+                }
+            }
+            @media (max-width: 480px) {
+                .gallery img{
+                    max-width: 100%
+                }
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <header>
+            <h1>Hi hi Kikaolise here!!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('services')">Services</a></li>
+                    <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Your Go To carefree Fairy</h2>
+            <p>I was told to make a 4 page website about myself and what i have to offer as an individual(for 5 marks...sigh). I am Kikaolise okaeme-dozie (Side Note: I refer to myself as Kixxie), 19 years old student of PAU, and and studying ISMS.</p>
+        </main>
+        <footer>
+            <p>&copy; Your favorite Tech Fairy xoxo.</p>
+        </footer>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page">
+        <header>
+            <h1>Not exactly services but in case you wanted to rent me as a friend...but what you would and should know about me as a person.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('services')">Services</a></li>
+                    <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Kikaolise as a person!!</h2>
+            <ul>
+                <li>I enjoy listening to podcasts</li>
+                <li>Spending time with friends and family</li>
+                <li>Watching documentaries, especially animal and crime related ones</li>
+                <li>Making websites for fun</li>
+                <li>one of my key strengths are my ability to connect with others regardless of age</li>
+                <li>I like to think i am a bit influential</li>
+                <li>I am also a creative and a fast learner, as long as it's a visual process</li>
+                <li>A good conversationalist. I am able to have convesations about everything and anything, i think this is because i grew up in a house filled with intellectuals</li>
+                <li>I do enjoy photography and i take picures proffesionally when needed - It is a hobby not something i want to actually take seriously</li>
+                <li>I have a lot more but i have listed enough as it is. I love applying these skills to my course- ISMS Information Science and media studies. They are going to help support my aspired career- Digital</li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2025  KixxieYourall-in-one TechFairy. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="gallery" class="page">
+        <header>
+            <h1>Our Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('services')">Services</a></li>
+                    <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>More of me</h2>
+            <p>This is just some of my photography!</p>
+            <img src="c:\Users\jaymo\Downloads\kika and family bw.jpeg" alt="Tech Fairy 1" style="width: 250;" height="250px">
+            <img src= "c:\Users\jaymo\Downloads\divine.jpeg" alt="Tech Fairy 2" style="width: max-content;" height="250px"> 
+            <img src="c:\Users\jaymo\Downloads\Kika and Onyinye.jpeg" alt="Tech Fairy 3" style="width: max-content;" height="250px">
+            <img src= "c:\Users\jaymo\Downloads\IMG_7779.jpeg" alt="Tech Fairy 4" style="width: 250px;" height="250px">
+            <img src= "c:\Users\jaymo\Downloads\a0037c42-e785-4dfe-8807-273916aa1ff5.jpg" alt="Tech Fairy 5" style="width: max-content;" height="250px">
+        </main>
+        <footer>
+            <p>&copy; 2025 KixxieYourall-in-one TechFairy. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('services')">Services</a></li>
+                    <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Oh! you could also book a service with me! As a rented friend or for my other tech skills.</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                <label for="dateofrent">Date Of Rent:</label>
+                <input type="text" id="dateofrent" name="dateofrent" required>
+                <label for="phonenumber">Your Phone number:</label>
+                <input type="text" id="phonenumber" name="phonenumber" required>
+                <label for="servicetype">Type of Service:</label>
+                <select id="servicetype" name="servicetype" required>
+                    <option value="rentafriend">Rent a friend</option>
+                    <option value="photography">Photography</option>
+                    <option value="buildawebiste">Build a website</option>
+                    <option value="tutoringlessonsforwebsite">Tutorial for websites</option>
+                    <option value="internshiprequirement">Internship requirement</option>
+                    <option value="featureinpodcast">To feature in a podcast</option>
+                    <option value="other">Other</option>
+                <option value="techfairySpecial">My kixxie Special, a three in one combo service special-comes with a cute little package after provided service !</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2025 KixxieGroomFairy. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.add('active');
+                } else {
+                    page.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
